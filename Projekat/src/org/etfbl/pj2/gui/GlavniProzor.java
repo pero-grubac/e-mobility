@@ -56,6 +56,7 @@ public class GlavniProzor extends JFrame {
 	private JButton autaBtn;
 	private JButton biciklaBtn;
 	private JButton trotinetiBtn;
+	private JButton kvarBtn;
 
 	private JPanel vrhAplikacije;
 
@@ -182,6 +183,15 @@ public class GlavniProzor extends JFrame {
 				prozor.setVisible(true);
 			}
 		});
+		// Dugme za kvarove
+		kvarBtn = new JButton("Kvar");
+		kvarBtn.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				KvarProzor prozor = new KvarProzor(racuni);
+				prozor.setVisible(true);
+			}
+		});
 		// Dodajemo dugmad na panel
 		dugmadPanel.add(dnevniIzvjestajBtn);
 		dugmadPanel.add(sumarniIzvjestajBtn);
@@ -189,6 +199,7 @@ public class GlavniProzor extends JFrame {
 		dugmadPanel.add(autaBtn);
 		dugmadPanel.add(biciklaBtn);
 		dugmadPanel.add(trotinetiBtn);
+		dugmadPanel.add(kvarBtn);
 		// Dodajemo panel sa dugmadima na vrh prozora
 		vrhAplikacije.add(dugmadPanel, BorderLayout.NORTH);
 	}

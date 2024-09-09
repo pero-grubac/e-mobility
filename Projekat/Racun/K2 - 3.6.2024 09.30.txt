@@ -1,4 +1,5 @@
-Korisnik ime=K2, identifikacioniDokument=W�U��, vozackaDozvola=ƿ��4
+Korisnik ime=K2, identifikacioniDokument={���
+, vozackaDozvola=0�[��
 Vozilo ID: A2
 Pocetna vrijednost baterije: 0,00%
 Zavrsna vrijednost baterije: 10,00%
