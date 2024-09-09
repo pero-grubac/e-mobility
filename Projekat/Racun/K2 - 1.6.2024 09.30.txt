@@ -1,0 +1,19 @@
+Korisnik ime=K2, identifikacioniDokument=I�҈�, vozackaDozvola=Tl
+Vozilo ID: A3
+Pocetna vrijednost baterije: 100,00%
+Zavrsna vrijednost baterije: 75,00%
+Pocetno vrijeme: 1.6.2024 09:30
+Zavrsno vrijeme: 1.6.2024 09:30
+Pocetna lokacija: (15,15)
+Zavrsna lokacija: (17,17)
+Duzina: 5
+Udaljenost u uzem dijelu: 1,00 (x0)
+Udaljenost u sirem dijelu: 1,50 (x5)
+Trajanje: 8
+Udaljenost: 60,00
+Osnovna cijena: 10,00
+Iznos: 600.0
+Popust: 0,00
+Promocija: 0,00
+Ukupno: 600.0
+Kvar: Ne

@@ -1,0 +1,19 @@
+Korisnik ime=K2, identifikacioniDokument=nema, vozackaDozvola=nema
+Vozilo ID: T1
+Pocetna vrijednost baterije: 68,00%
+Zavrsna vrijednost baterije: 44,00%
+Pocetno vrijeme: 1.6.2024 11:30
+Zavrsno vrijeme: 1.6.2024 11:30
+Pocetna lokacija: (8,5)
+Zavrsna lokacija: (9,15)
+Duzina: 12
+Udaljenost u uzem dijelu: 1,00 (x10)
+Udaljenost u sirem dijelu: 1,50 (x2)
+Trajanje: 8
+Udaljenost: 144,00
+Osnovna cijena: 2,00
+Iznos: 288.0
+Popust: 0,10
+Promocija: 0,00
+Ukupno: 259.2
+Kvar: Ne

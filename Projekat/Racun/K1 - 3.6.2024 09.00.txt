@@ -1,0 +1,19 @@
+Korisnik ime=K1, identifikacioniDokument=P�3', vozackaDozvola=L7��
+Vozilo ID: A1
+Pocetna vrijednost baterije: 100,00%
+Zavrsna vrijednost baterije: 65,00%
+Pocetno vrijeme: 3.6.2024 09:00
+Zavrsno vrijeme: 3.6.2024 09:00
+Pocetna lokacija: (5,5)
+Zavrsna lokacija: (11,5)
+Duzina: 7
+Udaljenost u uzem dijelu: 1,00 (x7)
+Udaljenost u sirem dijelu: 1,50 (x0)
+Trajanje: 8
+Udaljenost: 56,00
+Osnovna cijena: 10,00
+Iznos: 560.0
+Popust: 0,00
+Promocija: 0,00
+Ukupno: 560.0
+Kvar: Ne

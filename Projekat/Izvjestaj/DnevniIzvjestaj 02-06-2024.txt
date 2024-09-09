@@ -1,0 +1,15 @@
+Ukupni prihod: 10845.48
+Ukupni popust: 0.10
+Ukupna promocija: 0.84
+Zarada u vanjskom dijelu: 492.00
+Zarada u unutrasnjem dijelu: 416.00
+Troskovi odrzavanja: 2169.10
+Troskovi popravke: 2606.00
+Lista prihoda :
+  420.00
+  7650.00
+  1512.00
+  129.60
+  204.00
+  540.00
+  389.88

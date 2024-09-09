@@ -1,0 +1,19 @@
+Korisnik ime=K3, identifikacioniDokument=nema, vozackaDozvola=nema
+Vozilo ID: B1
+Pocetna vrijednost baterije: 46,00%
+Zavrsna vrijednost baterije: 10,00%
+Pocetno vrijeme: 1.6.2024 10:00
+Zavrsno vrijeme: 1.6.2024 10:00
+Pocetna lokacija: (7,5)
+Zavrsna lokacija: (9,14)
+Duzina: 12
+Udaljenost u uzem dijelu: 1,00 (x12)
+Udaljenost u sirem dijelu: 1,50 (x0)
+Trajanje: 10
+Udaljenost: 120,00
+Osnovna cijena: 3,00
+Iznos: 360.0
+Popust: 0,00
+Promocija: 0,00
+Ukupno: 360.0
+Kvar: Ne

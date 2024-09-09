@@ -1,0 +1,19 @@
+Korisnik ime=K2, identifikacioniDokument=W�U��, vozackaDozvola=ƿ��4
+Vozilo ID: A2
+Pocetna vrijednost baterije: 0,00%
+Zavrsna vrijednost baterije: 10,00%
+Pocetno vrijeme: 3.6.2024 09:30
+Zavrsno vrijeme: 3.6.2024 09:30
+Pocetna lokacija: (7,9)
+Zavrsna lokacija: (16,1)
+Duzina: 18
+Udaljenost u uzem dijelu: 1,00 (x5)
+Udaljenost u sirem dijelu: 1,50 (x13)
+Trajanje: 6
+Udaljenost: 162,00
+Osnovna cijena: 10,00
+Iznos: 1620.0
+Popust: 0,00
+Promocija: 0,70
+Ukupno: 2754.0
+Kvar: Ne
