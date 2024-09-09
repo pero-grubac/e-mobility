@@ -1,4 +1,4 @@
-Korisnik ime=K2, identifikacioniDokument=�9��C, vozackaDozvola=/K�x�
+Korisnik ime=K2, identifikacioniDokument=j, vozackaDozvola=���|
 Vozilo ID: A3
 Pocetna vrijednost baterije: 100,00%
 Zavrsna vrijednost baterije: 75,00%

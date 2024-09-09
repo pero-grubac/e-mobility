@@ -14,24 +14,22 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableColumnModel;
 
-import org.etfbl.pj2.iznajmljivanje.Iznajmljivanje;
 import org.etfbl.pj2.racun.Racun;
 import org.etfbl.pj2.util.Util;
 import org.etfbl.pj2.vozilo.Auto;
 import org.etfbl.pj2.vozilo.Biciklo;
 import org.etfbl.pj2.vozilo.Trotinet;
-import org.etfbl.pj2.vozilo.Vozilo;
 
-public class KvarProzor extends JFrame {
+public class PoslovanjeProzor extends JFrame {
 	private JTable tabela;
 	private int sirinaKolone = 0;
 
-	public KvarProzor(List<Racun> racuni) {
+	public PoslovanjeProzor(List<Racun> racuni) {
 		try {
 			setSize(new Dimension(100, 100));
 			setLocationRelativeTo(null);
 			setResizable(false);
-			setTitle("Kvar");
+			setTitle("Poslovanja");
 			napraviTabelu(racuni);
 			azurirajVelicinuTabele();
 			pack();
@@ -51,7 +49,7 @@ public class KvarProzor extends JFrame {
 
 	private void napraviTabelu(List<Racun> racuni) {
 		try {
-			String[] imenaKolona = { "Tip", "Id", "Vrijeme", "Opis" };
+			String[] imenaKolona = { "Tip", "Id", "Korisnik", "Ukupno" };
 
 			DefaultTableModel model = new DefaultTableModel(imenaKolona, 0) {
 				@Override
@@ -63,7 +61,7 @@ public class KvarProzor extends JFrame {
 				if (sirinaKolone < imenaKolona[i].length())
 					sirinaKolone = imenaKolona[i].length();
 
-			racuni.stream().filter(racun -> racun.getKvar() != null).forEach(racun -> {
+			racuni.stream().filter(racun -> racun.getKvar() == null).forEach(racun -> {
 				String tip = "";
 
 				if (racun.getVozilo() instanceof Auto) {
@@ -74,7 +72,7 @@ public class KvarProzor extends JFrame {
 					tip = "Trotinet";
 				}
 				Object[] podaci = new Object[] { tip, racun.getVozilo().getId(),
-						racun.getKvar().getVrijemeKvara().format(Util.DATE_TIME_FORMATTER), racun.getKvar().getOpis() };
+						racun.getIznajmljivanje().getKorisnik().getIme(), racun.getUkupno() };
 				for (int i = 0; i < podaci.length; i++)
 					if (sirinaKolone < podaci[i].toString().length())
 						sirinaKolone = podaci[i].toString().length();
