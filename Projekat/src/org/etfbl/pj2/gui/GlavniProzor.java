@@ -33,6 +33,7 @@ import org.etfbl.pj2.racun.Racun;
 import org.etfbl.pj2.util.Util;
 import org.etfbl.pj2.vozilo.Auto;
 import org.etfbl.pj2.vozilo.Biciklo;
+import org.etfbl.pj2.vozilo.Trotinet;
 import org.etfbl.pj2.vozilo.Vozilo;
 
 public class GlavniProzor extends JFrame {
@@ -52,6 +53,9 @@ public class GlavniProzor extends JFrame {
 	private JButton dnevniIzvjestajBtn;
 	private JButton sumarniIzvjestajBtn;
 	private JButton specijalniIzvjestajBtn;
+	private JButton autaBtn;
+	private JButton biciklaBtn;
+	private JButton trotinetiBtn;
 
 	private JPanel vrhAplikacije;
 
@@ -61,7 +65,11 @@ public class GlavniProzor extends JFrame {
 	private JPanel centar;
 	private int redovi = 20, kolone = 20;
 
-	public GlavniProzor(List<Racun> racuni) {
+	private List<Vozilo> auta = new ArrayList<>();
+	private List<Vozilo> bicikla = new ArrayList<>();
+	private List<Vozilo> trotineti = new ArrayList<>();
+
+	public GlavniProzor(List<Racun> racuni, List<Vozilo> vozila) {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setResizable(false);
 		try {
@@ -74,7 +82,7 @@ public class GlavniProzor extends JFrame {
 		setLocationRelativeTo(null);
 
 		this.racuni = racuni;
-
+		razvrstajVozila(vozila);
 		setLayout(new BorderLayout());
 		setExtendedState(JFrame.MAXIMIZED_BOTH);
 
@@ -88,8 +96,21 @@ public class GlavniProzor extends JFrame {
 		setBackground(bojaPozadine);
 	}
 
+	private void razvrstajVozila(List<Vozilo> vozila) {
+		for (Vozilo vozilo : vozila) {
+			if (vozilo instanceof Auto) {
+				auta.add(vozilo);
+			} else if (vozilo instanceof Biciklo) {
+				bicikla.add(vozilo);
+			} else if (vozilo instanceof Trotinet) {
+				trotineti.add(vozilo);
+			}
+		}
+
+	}
+
 	private void konfiguracijaMenija() {
-		dugmadPanel = new JPanel(new GridLayout(1, 3));
+		dugmadPanel = new JPanel(new GridLayout(1, 6));
 
 		// Kreiramo dugme 1
 		dnevniIzvjestajBtn = new JButton("Dnevni izvjestaj");
@@ -134,12 +155,40 @@ public class GlavniProzor extends JFrame {
 				prozor.setVisible(true);
 			}
 		});
-
+		// Dugme za auta
+		autaBtn = new JButton("Auta");
+		autaBtn.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				VoziloProzor prozor = new VoziloProzor(auta, "Auta");
+				prozor.setVisible(true);
+			}
+		});
+		// Dugme za bicikla
+		biciklaBtn = new JButton("Bicikla");
+		biciklaBtn.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				VoziloProzor prozor = new VoziloProzor(bicikla, "Bicikla");
+				prozor.setVisible(true);
+			}
+		});
+		// Dugme za trotinete
+		trotinetiBtn = new JButton("Trotineti");
+		trotinetiBtn.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				VoziloProzor prozor = new VoziloProzor(trotineti, "Trotineti");
+				prozor.setVisible(true);
+			}
+		});
 		// Dodajemo dugmad na panel
 		dugmadPanel.add(dnevniIzvjestajBtn);
 		dugmadPanel.add(sumarniIzvjestajBtn);
 		dugmadPanel.add(specijalniIzvjestajBtn);
-
+		dugmadPanel.add(autaBtn);
+		dugmadPanel.add(biciklaBtn);
+		dugmadPanel.add(trotinetiBtn);
 		// Dodajemo panel sa dugmadima na vrh prozora
 		vrhAplikacije.add(dugmadPanel, BorderLayout.NORTH);
 	}

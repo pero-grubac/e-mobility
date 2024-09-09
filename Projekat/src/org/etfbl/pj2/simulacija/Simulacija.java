@@ -47,7 +47,7 @@ public class Simulacija {
 		List<Racun> racuni = iznajmljivanja.stream().map(izn -> new Racun(izn, map.get(izn.getIdVozila())))
 				.collect(Collectors.toList());
 		// racuni.stream().forEach(System.out::println);
-		GlavniProzor prozor = new GlavniProzor(racuni);
+		GlavniProzor prozor = new GlavniProzor(racuni,vozila);
 		prozor.setVisible(true);
 
 		startSimulation(racuni, prozor);

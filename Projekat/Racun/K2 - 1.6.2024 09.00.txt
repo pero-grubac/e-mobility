@@ -16,4 +16,4 @@ Iznos: 0.0
 Popust: 0,00
 Promocija: 0,00
 Ukupno: 0.0
-Kvar [vrijemeKvara=1.6.2024 09:00, opis=�d�n�J��d]
+Kvar [vrijemeKvara=1.6.2024 09:00, opis=�c�����]
